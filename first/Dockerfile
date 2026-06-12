@@ -3,7 +3,7 @@ FROM ubuntu:latest
 #set working directory in the image
 WORKDIR ./app
 #copy file from host to image
-COPY ./app 
+COPY . /app 
 
 #install dependencies
 RUN apt-get update && apt-get intall -y pyton3 python3-pip
